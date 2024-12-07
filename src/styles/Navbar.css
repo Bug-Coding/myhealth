@@ -1,0 +1,39 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;  /* Keeps the navbar fixed at the top */
+    top: 0;           /* Aligns it to the top of the page */
+    left: 0;          /* Aligns it to the left of the page */
+    width: 100%;      /* Ensures the navbar spans the entire width */
+    z-index: 1000;    /* Ensures it stays above other content */
+    background-color: #4caf50;
+    color: rgb(21, 20, 20);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: adds shadow for better visibility */
+  }
+  
+  .navbar-logo h1 {
+    margin: 0;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(158, 18, 18);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #d4ffd4;
+  }
+  
+  /* Add padding to the body so that content doesn't hide behind the navbar */
+  body {
+    padding-top: 60px; /* Adjust according to the navbar height */
+  }
+  

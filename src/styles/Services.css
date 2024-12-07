@@ -1,0 +1,166 @@
+/* General Styles for the Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: #fff; /* White background */
+}
+
+/* Services Page */
+.services-container {
+  position: relative;
+  height: 100vh;
+  width: 90%; /* Make the container full width */
+  background: #fff; /* White background */
+  background-image: 
+    /* Vertical Lines */
+    linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+    /* Horizontal Lines */
+    linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+  background-size: 6.25% 10%; /* 16 vertical lines, 10 horizontal lines */
+  background-position: top left;
+  background-repeat: repeat;
+  z-index: 1; /* Ensuring background is behind content */
+  display: flex;
+  flex-direction: column; /* Stack service cards vertically */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 80px; /* Increase padding to make it look spacious */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+/* Rainbow Gradient for "Our Services" */
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+  background: linear-gradient(to right, red, orange, rgb(31, 159, 93), rgb(3, 62, 3), blue, indigo, violet); /* Rainbow gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+/* Service Card Container */
+.service-card {
+  position: relative;
+  margin: 20px;
+  padding: 30px; /* Increase padding for larger cards */
+  width: 90%; /* Make service card container wider */
+  max-width: 800px; /* Optional: limit the width */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow for better visibility */
+  z-index: 10; /* Ensure service card appears above the background */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Hover Effect on Service Name */
+.service-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(61, 49, 49);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.service-name:hover {
+  color: #2810d9; /* Highlight color on hover */
+}
+
+/* Popup Content for Each Service */
+.popup-content {
+  display: none;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.95); /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show Popup on Service Click */
+.service-card:hover .popup-content {
+  display: block;
+}
+
+/* Form for Food Search */
+.search-input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #1ba01b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Health News Section */
+.news-container {
+  margin-top: 20px;
+}
+
+.news-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-container li {
+  margin-bottom: 10px;
+}
+
+.news-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-container a:hover {
+  text-decoration: underline;
+}
+
+/* Button for Diet Plan */
+.diet-plan-button {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.diet-plan-button:hover {
+  background-color: #218838;
+}
+
+/* Pop-Up for Diet Plan */
+.diet-plan {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.service-name i {
+    margin-right: 10px;
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Adjust color */
+  }
+  
+  .service-name i:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
