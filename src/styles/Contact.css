@@ -1,0 +1,87 @@
+.contact-section {
+  padding: 60px 20px; /* Increased padding for better spacing */
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  background-color: #ffffff; /* Clean white background */
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 6.25% 11%;
+  background-position: top left;
+  box-sizing: border-box;
+  
+}
+
+.contact-section h2 {
+  font-size: 50px; /* Larger font for the heading */
+   /* Darker text for better contrast */
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Increased spacing between form elements */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd; /* Light border for form container */
+  border-radius: 10px;
+  background-color: #f7f7f7; /* Subtle background for form */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.contact-section label {
+  text-align: left;
+  width: 100%;
+  font-size: 20px; /* Larger label font */
+  font-weight: 600; /* Emphasized label text */
+  color: #555;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 15px; /* Comfortable padding */
+  font-size: 18px; /* Slightly larger font size */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.contact-section button {
+  padding: 15px 30px; /* Larger button size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px; /* Larger font for button */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+.contact-section p {
+  margin-top: 25px;
+  font-size: 20px; /* Emphasized confirmation message */
+  color: green;
+  font-style: italic; /* Added styling for a softer tone */
+}

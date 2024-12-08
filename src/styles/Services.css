@@ -11,7 +11,7 @@ body {
 .services-container {
   position: relative;
   height: 100vh;
-  width: 90%; /* Make the container full width */
+  width: 100%; /* Make the container full width */
   background: #fff; /* White background */
   background-image: 
     /* Vertical Lines */
@@ -34,7 +34,7 @@ body {
 h1 {
   font-size: 52px;
   font-weight: bold;
-  background: linear-gradient(to right, red, orange, rgb(31, 159, 93), rgb(3, 62, 3), blue, indigo, violet); /* Rainbow gradient */
+  background: linear-gradient(to right, #ff0000, #8E2DE2, #4A00E0); /* Rainbow gradient */
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 30px;
