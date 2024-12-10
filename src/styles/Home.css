@@ -12,42 +12,108 @@
 }
 
 /* Navbar */
+/* General Styles */
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Change font family */
+}
+
 .navbar {
-    position: fixed;
-    top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    z-index: 10;
+  background: ;
+  color: #fff;
+  padding: 20px 40px; /* Increase padding for larger navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 70px;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.navbar li {
-    display: inline;
+.navbar-logo {
+  font-size: 2rem; /* Increase the size of "MyHealth" */
+  font-weight: bold;
+  color: white; /* Set logo color to white */
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Change font family for logo */
 }
 
-.navbar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 27px;
-    display: flex;
+.navbar-logo a {
+  text-decoration: none;
+  color: inherit; /* Inherit white color from navbar */
+}
+
+/* Menu Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 50px; /* Increase the gap between navbar items */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem; /* Increase the font size */
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #0b0b0b;
+}
+
+/* Hamburger Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #171616;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #444;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+    transform: scaleY(1);
+    max-height: 300px; /* Adjust this value to fit your content */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
 }
 
-.navbar a:hover {
-    color: #2a2a28;
-    transform: scale(1.1);
-}
 
 /* Full-Page Spline Background */
 .spline-background {
