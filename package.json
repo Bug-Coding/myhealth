@@ -1,7 +1,10 @@
 {
   "name": "myhealth",
   "version": "0.1.0",
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
